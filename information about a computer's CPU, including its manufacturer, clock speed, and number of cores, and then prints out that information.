@@ -1,0 +1,13 @@
+// Write a C program that uses a structure to store information about a computer's CPU, including its manufacturer, clock speed, and number of cores, and then prints out that information.
+#include<stdio.h>
+struct computer 
+{
+    char manufacturer[50];
+    char speed[50];
+    int cores;
+};
+int main()
+{
+    struct computer c={"praneeth","10mpersec",46};
+    printf("%s\n %s\n %d",c.manufacturer,c.speed,c.cores);
+}
