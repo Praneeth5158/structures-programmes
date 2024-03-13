@@ -1,0 +1,19 @@
+//Define a structure in C for a song record that includes fields for the song's title, artist, album, and length.
+
+
+#include<stdio.h>
+struct song
+{
+    char title[30];
+    char artist[30];
+    char album[30];
+    char length[30];
+};
+int main()
+{
+    struct song file={"wanna be yours","praneeth","motovation","5 minutes"};
+    printf("title is %s\n",file.title);
+    printf("artist is %s\n",file.artist);
+    printf("album is %s\n",file.album);
+    printf("length is %s\n",file.length);
+}
